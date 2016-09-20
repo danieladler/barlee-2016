@@ -1,0 +1,9 @@
+.main-content {
+  @include outer-container;
+
+  .header,
+  .index,
+  .footer {
+    @include span-columns(12);
+  }
+}

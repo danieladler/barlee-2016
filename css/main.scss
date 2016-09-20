@@ -1,7 +1,11 @@
 ---
 ---
+// grid using thoughtbot neat
+@import "neat/neat";
+@import "grid-settings";
 
 @import "settings";
+@import "default";
 @import "header";
 @import "footer";
 @import "index";

@@ -1,3 +1,44 @@
 .gallery {
-  background-color: rgb(150, 150, 150);
+
+  .image {
+    background-color: rgb(134, 191, 193);
+    // padding: 20px 2px;
+    margin-bottom: 10px;
+  }
+
+  .image-block-wrapper {
+    @include outer-container;
+  }
+
+  .image-1 {
+    @include media($medium-screen) {
+         @include span-columns(6);
+      }
+      @include media($small-screen) {
+         @include span-columns(12);
+      }
+  }
+
+  .image-2 {
+    @include span-columns(6);
+
+    @include media($medium-screen) {
+       @include span-columns(6);
+    }
+
+    @include media($small-screen) {
+       @include span-columns(12);
+    }
+  }
+
+  .image-3 {
+    @include span-columns(4);
+
+    @include media($medium-screen) {
+        @include span-columns(4);
+     }
+     @include media($small-screen) {
+        @include span-columns(12);
+     }
+  }
 }
