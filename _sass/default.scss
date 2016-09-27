@@ -1,3 +1,11 @@
+.header {
+  background-color: rgb(200, 200, 200);
+
+  .header-content {
+    text-align: center;
+  }
+}
+
 .main-content {
   @include outer-container;
 
@@ -5,5 +13,16 @@
   .index,
   .footer {
     @include span-columns(12);
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(100, 100, 100);
+
+  .footer-content {
+    text-align: center;
   }
 }

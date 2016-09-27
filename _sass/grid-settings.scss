@@ -4,5 +4,12 @@
 $max-width: 800px;
 
 // Custom breakpoints
-$small-screen: new-breakpoint(max-width 768px 8);
-$medium-screen: new-breakpoint(max-width 480px 4);
+$small-screen: 480px;
+$medium-screen: 768 -1 px;
+$large-screen: 1024px;
+$x-large-screen: 1440px;
+
+$small-up: new-breakpoint(max-width $small-screen 12);
+// $medium-up: new-breakpoint(min-width $small-screen max-width $large-screen 12);
+$medium-up: new-breakpoint(max-width $medium-screen 12);
+$large-up: new-breakpoint(min-width $large-screen 12);
