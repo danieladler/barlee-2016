@@ -3,13 +3,16 @@
 // Overwrite default grid settings
 $max-width: 800px;
 
-// Custom breakpoints
-$small-screen: 480px;
-$medium-screen: 768 -1 px;
+// Screen Sizes:
+// NB: small screen (<400px) is implied below within the $small-up breakpoint
+$large-mobile: 400px;
+$medium-screen: 768px;
 $large-screen: 1024px;
 $x-large-screen: 1440px;
 
-$small-up: new-breakpoint(max-width $small-screen 12);
-// $medium-up: new-breakpoint(min-width $small-screen max-width $large-screen 12);
-$medium-up: new-breakpoint(max-width $medium-screen 12);
+// Custom Breakpoints:
+$small-up: new-breakpoint(min-width 0px 12);
+$large-mobile-up: new-breakpoint(min-width $large-mobile);
+$medium-up: new-breakpoint(min-width $medium-screen 12);
 $large-up: new-breakpoint(min-width $large-screen 12);
+$x-large-screen: new-breakpoint(min-width $x-large-screen 12);

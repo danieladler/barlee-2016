@@ -4,40 +4,17 @@
     margin-bottom: 10px;
   }
 
-  .image {
-    background-color: rgb(115, 115, 115);
-
+  ._1up {
     @include media($small-up) {
       @include span-columns(12);
-      background-color: blue;
-    }
-
-    @include media($medium-up) {
-      background-color: orange
-    }
-
-    @include media($large-up) {
-      background-color: green;
     }
   }
 
-  ._1up {
-    // @include media($medium-up) {
-    //   @include span-columns(1);
-    // }
-    // @include media($large-up) {
-    //   @include span-columns(6);
-    // }
-  }
-
+  ._2up-horizontal,
   ._2up-vertical {
-    @include media($medium-up) {
+    @include media($large-mobile-up) {
       @include span-columns(6);
     }
-  }
-
-  ._2up.horizontal {
-
   }
 
   ._2up-left-vertical {
@@ -49,27 +26,8 @@
   }
 
   ._3up {
-    // @include span-columns(12);
-
-    @include media($medium-up) {
+    @include media($large-mobile-up) {
       @include span-columns(4);
     }
-
-    // @include media($large-up) {
-    //   @include span-columns(4);
-    // }
   }
-
-  ._4up {
-
-  }
-
-  // .image {
-  //   background-color: rgb(115, 115, 115);
-  //
-  //   @include media($small-up) {
-  //     @include span-columns(12);
-  //     background-color: blue;
-  //   }
-  // }
 }
