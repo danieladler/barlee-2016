@@ -1,7 +1,10 @@
 .gallery {
   .image-wrapper {
     @include outer-container;
-    margin-bottom: 10px;
+  }
+
+  .image {
+    margin-bottom: 1rem;
   }
 
   ._1up {

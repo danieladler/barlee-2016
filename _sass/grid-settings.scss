@@ -4,14 +4,14 @@
 $max-width: 800px;
 
 // Screen Sizes:
-// NB: small screen (<400px) is implied below within the $small-up breakpoint
+$small-screen: 320px;
 $large-mobile: 400px;
 $medium-screen: 768px;
 $large-screen: 1024px;
 $x-large-screen: 1440px;
 
 // Custom Breakpoints:
-$small-up: new-breakpoint(min-width 0px 12);
+$small-up: new-breakpoint(min-width $small-screen 12);
 $large-mobile-up: new-breakpoint(min-width $large-mobile);
 $medium-up: new-breakpoint(min-width $medium-screen 12);
 $large-up: new-breakpoint(min-width $large-screen 12);
