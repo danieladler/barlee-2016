@@ -21,11 +21,27 @@
   }
 
   ._2up-left-vertical {
+    @include media($large-mobile-up) {
+      @include span-columns(4);
+    }
+  }
 
+  ._2up-right-horizontal {
+    @include media($large-mobile-up) {
+      @include span-columns(8);
+    }
+  }
+
+  ._2up-left-horizontal {
+    @include media($large-mobile-up) {
+      @include span-columns(8);
+    }
   }
 
   ._2up-right-vertical {
-
+    @include media($large-mobile-up) {
+      @include span-columns(4);
+    }
   }
 
   ._3up {
