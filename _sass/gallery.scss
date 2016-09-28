@@ -1,4 +1,6 @@
 .gallery {
+  margin: 1rem;
+
   .image-wrapper {
     @include outer-container;
   }

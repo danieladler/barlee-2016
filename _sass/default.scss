@@ -6,15 +6,16 @@
   }
 }
 
+.page-heading-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .main-content {
   min-width: $small-screen;
   display: inline-block;
   width: 100%;
-
-  // @include outer-container;
-  @include media($small-up) {
-    margin: 1rem;
-  }
 
   .header,
   .index,
@@ -24,8 +25,6 @@
 }
 
 .footer {
-  // position: absolute;
-  // bottom: 0;
   width: 100%;
   background-color: rgb(100, 100, 100);
 
