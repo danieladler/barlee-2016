@@ -5,8 +5,16 @@
     @include outer-container;
   }
 
+  .image-set-end {
+    margin-bottom: 30px;
+  }
+
   .image {
     margin-bottom: 1rem;
+  }
+
+  .full-width {
+    width: 100%;
   }
 
   ._1up {
