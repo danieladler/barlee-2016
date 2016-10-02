@@ -1,9 +1,35 @@
+.header {
+  background-color: rgb(200, 200, 200);
+
+  .header-content {
+    text-align: center;
+  }
+}
+
+.page-heading-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .main-content {
-  @include outer-container;
+  min-width: $small-screen;
+  display: inline-block;
+  width: 100%;
 
   .header,
   .index,
   .footer {
     @include span-columns(12);
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(100, 100, 100);
+
+  .footer-content {
+    text-align: center;
+    margin: 0;
   }
 }

@@ -1,44 +1,54 @@
 .gallery {
+  margin: 1rem;
 
-  .image {
-    background-color: rgb(134, 191, 193);
-    // padding: 20px 2px;
-    margin-bottom: 10px;
-  }
-
-  .image-block-wrapper {
+  .image-wrapper {
     @include outer-container;
   }
 
-  .image-1 {
-    @include media($medium-screen) {
-         @include span-columns(6);
-      }
-      @include media($small-screen) {
-         @include span-columns(12);
-      }
+  .image {
+    margin-bottom: 1rem;
   }
 
-  .image-2 {
-    @include span-columns(6);
-
-    @include media($medium-screen) {
-       @include span-columns(6);
-    }
-
-    @include media($small-screen) {
-       @include span-columns(12);
+  ._1up {
+    @include media($small-up) {
+      @include span-columns(12);
     }
   }
 
-  .image-3 {
-    @include span-columns(4);
+  ._2up-horizontal,
+  ._2up-vertical {
+    @include media($large-mobile-up) {
+      @include span-columns(6);
+    }
+  }
 
-    @include media($medium-screen) {
-        @include span-columns(4);
-     }
-     @include media($small-screen) {
-        @include span-columns(12);
-     }
+  ._2up-left-vertical {
+    @include media($large-mobile-up) {
+      @include span-columns(4);
+    }
+  }
+
+  ._2up-right-horizontal {
+    @include media($large-mobile-up) {
+      @include span-columns(8);
+    }
+  }
+
+  ._2up-left-horizontal {
+    @include media($large-mobile-up) {
+      @include span-columns(8);
+    }
+  }
+
+  ._2up-right-vertical {
+    @include media($large-mobile-up) {
+      @include span-columns(4);
+    }
+  }
+
+  ._3up {
+    @include media($large-mobile-up) {
+      @include span-columns(4);
+    }
   }
 }
