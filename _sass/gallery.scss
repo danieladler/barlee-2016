@@ -36,7 +36,9 @@
   ._2up-left-horizontal .image,
   ._2up-right-horizontal .image,
   ._2up-right-vertical .image {
-    max-height: 315px;
+    @include media($large-mobile-up) {
+      max-height: 315px;
+    }
   }
 
 

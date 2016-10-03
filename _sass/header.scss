@@ -1,0 +1,43 @@
+.header {
+  background-image: url("../images/1-interior-prep/01-1up-2529.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media($small-up) {
+    height: 250px;
+  }
+
+  @include media($medium-up) {
+  }
+
+
+  @include media($large-mobile-up) {
+    height: 600px;
+    // background-position: 0 -180px;
+  }
+}
+
+.header-content {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @include media($small-up) {
+    padding-top: 10px;
+  }
+
+  @include media($large-mobile-up) {
+    padding-top: 70px;
+  }
+
+
+  .page-heading {
+    font-size: 36px;
+  }
+
+  .subheader {
+    font-size: 24px;
+  }
+
+}
