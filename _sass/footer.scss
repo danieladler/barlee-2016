@@ -1,3 +1,10 @@
-.footer .image {
+.footer {
   width: 100%;
+  background-color: rgb(100, 100, 100);
+}
+
+.footer-image {
+  background-image: url("../images/4-post/DSC_5960-2.jpg");
+  background-size: cover;
+  height: 100%;
 }

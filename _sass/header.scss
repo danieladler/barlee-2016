@@ -2,6 +2,7 @@
   background-image: url("../images/1-interior-prep/01-1up-2529.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 
   @include media($small-up) {
     height: 250px;
