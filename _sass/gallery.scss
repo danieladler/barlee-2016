@@ -1,18 +1,16 @@
 .gallery {
   margin: 1rem;
 
+  .image-animate {
+    visibility: hidden;
+  }
+
   .image-wrapper {
     @include outer-container;
   }
 
-  @include media($large-mobile-up) {
-    .image-set-end {
-      margin-bottom: 1.875rem;
-    }
-  }
-
   .image {
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
   }
 
   .full-width {
