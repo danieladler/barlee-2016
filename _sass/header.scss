@@ -18,27 +18,102 @@
   }
 }
 
+.header-content-wrapper {
+  @include media($small-up) {
+    padding-top: .625rem;
+  }
+
+  @include media($large-mobile-up) {
+    padding-top: 1.875rem;
+  }
+}
+
 .header-content {
   text-align: center;
   color: white;
   max-width: 800px;
   margin: 0 auto;
+  background-color: hsla(0, 0%, 77%, 0.75);
+  padding: 1.25rem 0;
+  border-radius: .25rem;
 
-  @include media($small-up) {
-    padding-top: 10px;
+  .names {
+    @include media($medium-up) {
+      padding-left: 2rem;
+    }
   }
 
-  @include media($large-mobile-up) {
-    padding-top: 70px;
+  .page-heading-name,
+  .page-heading-amp {
+    @include media($small-up) {
+      display: block;
+    }
+
+    @include media($medium-up) {
+      display: inline-block;
+    }
+
+    margin-bottom: 0;
   }
 
+  .page-heading-name {
+    font-family: 'Oswald', sans-serif;
 
-  .page-heading {
-    font-size: 36px;
+    @include media($small-up) {
+      font-size: 2rem;
+      letter-spacing: .25rem;
+    }
+
+    @include media($large-mobile-up) {
+      font-size: 3rem;
+      letter-spacing: .5rem;
+    }
+
+    @include media($medium-up) {
+      font-size: 4rem;
+    }
+  }
+
+  .name-left {
+    @include media($large-mobile-up) {
+      padding-left: .5rem;
+    }
+  }
+
+  .name-right {
+    @include media($large-mobile-up) {
+      padding-left: .5rem;
+    }
+  }
+
+  .page-heading-amp {
+    font-family: 'Playfair Display', serif;
+
+    @include media($small-up) {
+      font-size: 1.5rem;
+      padding: 0;
+    }
+
+    @include media($large-mobile-up) {
+      font-size: 2.625rem;
+      vertical-align: super;
+    }
+
+    @include media($medium-up) {
+      padding: 0 .625rem 0 1rem;
+      vertical-align: text-bottom;
+    }
   }
 
   .subheader {
-    font-size: 24px;
-  }
+    font-family: 'Neuton', serif;
 
+    @include media($small-up) {
+      font-size: 1.5rem;
+    }
+
+    @include media($large-mobile-up) {
+      font-size: 1.75rem;
+    }
+  }
 }
