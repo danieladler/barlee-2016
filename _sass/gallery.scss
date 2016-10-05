@@ -1,12 +1,20 @@
 .gallery {
   margin: 1rem;
 
+  .image-animate {
+    visibility: hidden;
+  }
+
   .image-wrapper {
     @include outer-container;
   }
 
   .image {
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
+  }
+
+  .full-width {
+    width: 100%;
   }
 
   ._1up {
@@ -22,27 +30,60 @@
     }
   }
 
+  ._2up-left-vertical .image,
+  ._2up-left-horizontal .image,
+  ._2up-right-horizontal .image,
+  ._2up-right-vertical .image {
+    @include media($large-mobile-up) {
+      max-height: 315px;
+    }
+  }
+
+
   ._2up-left-vertical {
     @include media($large-mobile-up) {
       @include span-columns(4);
+      margin-right: 0px;
+
+      .image {
+        max-width: 95%;
+        float: left;
+      }
     }
+
   }
 
   ._2up-right-horizontal {
     @include media($large-mobile-up) {
       @include span-columns(8);
+
+      .image {
+        max-width: 103.5%;
+      }
     }
+
   }
 
   ._2up-left-horizontal {
     @include media($large-mobile-up) {
       @include span-columns(8);
+
+      .image {
+        max-width: 103.5%;
+      }
     }
   }
 
   ._2up-right-vertical {
     @include media($large-mobile-up) {
       @include span-columns(4);
+
+      margin-left: 0;
+
+      .image {
+        max-width: 95%;
+        float: right;
+      }
     }
   }
 
