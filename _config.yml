@@ -1,7 +1,7 @@
 title: barlee-2016
 email: hello@dadler.codes
-baseurl: "/barlee-2016" # the subpath of your site, e.g. /blog
-url: "http://danieladler.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "www.barlee-2016.com" # the base hostname & protocol for your site
 twitter_username: adlerography
 github_username: danieladler
 
